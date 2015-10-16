@@ -1,0 +1,10 @@
+%hr
+- @plans.each do |plan|
+	= plan.id
+	%br
+	= link_to(plan.title, plan_path(plan), class: ['asd', 'sdaf', 'sdf'], data: {'focus': true })
+	%br
+	= plan.user.username
+	%br
+	= plan.user.email
+	%hr
